@@ -1,21 +1,18 @@
 local Assets = { 
-	-- Animation files for the item (showing it on the ground and swap symbols for the players).
+
     Asset("ANIM", "anim/whandmirror.zip"),
 	Asset("ANIM", "anim/whandmirror_ground.zip"),
 
-	-- Inventory image and atlas file used for the item.
+
     Asset("ATLAS", "images/inventoryimages/whandmirror.xml"),
     Asset("IMAGE", "images/inventoryimages/whandmirror.tex"),
 }
 
 local function OnEquip(inst, owner)
-	-- This will override symbol "swap_body" of the equipping player with your custom build symbol.
-	-- Here's what this function is overriding:
-	-- owner.AnimState:OverrideSymbol(Player's_symbol, Your_build(*.zip_filename), Symbol_from_your_build(name_of_subfolder_with_art)
+
 	owner.AnimState:OverrideSymbol("swap_object", "whandmirror", "swap_object")
 	
-	-- Players have 2 left arms - one of them is hidden when we are not holding an item and vice versa.
-	-- Since we want to show an item on equip - hide ARM_normal and show ARM_carry.
+
 	owner.AnimState:Show("ARM_carry")
 	owner.AnimState:Hide("ARM_normal")
 end
@@ -26,7 +23,7 @@ local function OnUnequip(inst, owner)
 end
 
 local function MainFunction()
-	-- Functions which are performed both on Client and Server start here.
+
     local inst = CreateEntity()
 	
 	inst.entity:AddTransform()
@@ -36,19 +33,17 @@ local function MainFunction()
 	
 	MakeInventoryPhysics(inst)
 	
-	-- Add minimap icon. Remember about its XML in modmain.lua!
+
 	local minimap = inst.entity:AddMiniMapEntity()
 	minimap:SetIcon("whandmirror.tex")
 	
-	--[[ ANIMSTATE ]]--
-	-- This is the name visible on the top of hierarchy in Spriter.
+
 	inst.AnimState:SetBank("whandmirror_ground")
-	-- This is the name of your compiled*.zip file.
+
 	inst.AnimState:SetBuild("whandmirror_ground")
-	-- This is the animation name while item is on the ground.
+
 	inst.AnimState:PlayAnimation("anim")
 
-	--[[ TAGS ]]--
 	inst:AddTag("whandmirror")
 
     MakeInventoryFloatable(inst, "small", 0.05, {1.2, 0.75, 1.2})
@@ -56,8 +51,7 @@ local function MainFunction()
     inst.entity:SetPristine()
 
     if not TheWorld.ismastersim then
-		-- If we're not the host - stop performing further functions.
-		-- Only server functions below.
+
         return inst
     end
 
