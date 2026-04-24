@@ -22,7 +22,7 @@ local function onhammered(inst, worker)
     for i, v in ipairs(crafting_items) do
         local item_name = v[1]
         local item_count = v[2]
-        local drop_count = math.ceil(item_count / 2)  -- Aquí se calcula la mitad de los ítems
+        local drop_count = math.ceil(item_count / 2) 
         for i = 1, drop_count do
             inst.components.lootdropper:SpawnLootPrefab(item_name)
         end
@@ -40,11 +40,11 @@ local function onhit(inst, worker)
 end
 
 local function onattunecost(inst, player)
-    --round up health to match UI display
+
 	local amount_required = player:HasTag("health_as_oldage") and math.ceil(TUNING.EFFIGY_HEALTH_PENALTY * TUNING.OLDAGE_HEALTH_SCALE) or TUNING.EFFIGY_HEALTH_PENALTY
 
     if player.components.health == nil or math.ceil(player.components.health.currenthealth) <= amount_required then
-		--Don't die from attunement!
+
         return false, "NOHEALTH"
     end
     
@@ -56,11 +56,11 @@ end
 local function onlink(inst, player, isloading)
     if not isloading then
         inst.SoundEmitter:PlaySound("dontstarve/common/together/meat_effigy_attune/on")
-        inst.AnimState:PlayAnimation("handsomefire", true)  -- Reproduce la animación handsomefire
-        inst.Light:Enable(true)  -- Enciende la luz
+        inst.AnimState:PlayAnimation("handsomefire", true) 
+        inst.Light:Enable(true)  
     elseif inst.components.attunable:IsAttuned(player) then
-        inst.AnimState:PlayAnimation("handsomefire", true)  -- Reproduce la animación handsomefire si la estatua ya está enlazada al jugador
-        inst.Light:Enable(true)  -- Enciende la luz
+        inst.AnimState:PlayAnimation("handsomefire", true) 
+        inst.Light:Enable(true) 
     end
 end
 
@@ -68,8 +68,8 @@ local function onunlink(inst, player, isloading)
     if not (isloading or inst.AnimState:IsCurrentAnimation("handsomefire")) then
         inst.SoundEmitter:PlaySound("dontstarve/common/together/meat_effigy_attune/off")
 		inst.AnimState:PlayAnimation("attune_off")
-        inst.AnimState:PlayAnimation("idle", true)  -- Vuelve a la animación idle
-        inst.Light:Enable(false)  -- Apaga la luz
+        inst.AnimState:PlayAnimation("idle", true) 
+        inst.Light:Enable(false) 
     end
 end
 
@@ -85,10 +85,10 @@ local function onbuilt(inst, data)
 end
 
 local function OnActivateResurrection(inst, guy)
-    --print("guy:",guy,"inst:",inst)
+   
     guy.sg:GoToState("rewindtime_rebirth")
 
-    -- Reproduce la animación "collapse_big" y el sonido "destroy_stone" cuando el personaje vuelve a la vida
+   
     SpawnPrefab("collapse_big").Transform:SetPosition(inst.Transform:GetWorldPosition())
     inst.SoundEmitter:PlaySound("dontstarve/common/destroy_stone")
 
@@ -112,7 +112,7 @@ local function fn()
 	inst.Light:SetFalloff(0.8)
 	inst.Light:SetIntensity(.5)
 	inst.Light:SetColour(235/255,121/255,12/255)
-	inst.Light:Enable(false)  -- La luz comienza apagada
+	inst.Light:Enable(false) 
 
     MakeObstaclePhysics(inst, .3)
 
