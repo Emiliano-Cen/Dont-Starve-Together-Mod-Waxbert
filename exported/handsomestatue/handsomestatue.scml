@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0" name="handsomestatue">
+        <file id="0" name="handsomestatue/Fire3.png" width="760" height="716" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="handsomestatue/handsomestatue.png" width="158" height="247" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="handsomestatue/handsomestatuechiq.png" width="360" height="480" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="handsomestatue/handsomestatuebase.png" width="360" height="480" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="handsomestatue/handsomestatuecab.png" width="360" height="480" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="handsomestatue/handsomestatueder.png" width="360" height="480" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="handsomestatue/handsomestatueizq.png" width="360" height="480" pivot_x="0" pivot_y="1"/>
+        <file id="7" name="handsomestatue/handsomestatueabd.png" width="360" height="480" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="handsomestatue">
+        <animation id="0" name="idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="handsomestatuechiq">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-298.580453" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="handsomebroke" length="1000" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="99">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="1" z_index="4"/>
+                </key>
+                <key id="2" time="100">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="1" z_index="4"/>
+                </key>
+                <key id="3" time="200">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="2" z_index="4"/>
+                </key>
+                <key id="4" time="300">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="3" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="3" z_index="4"/>
+                </key>
+                <key id="5" time="400">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="4" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="4" z_index="4"/>
+                </key>
+                <key id="6" time="500">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="5" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="4" z_index="4"/>
+                </key>
+                <key id="7" time="600">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="6" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="4" z_index="4"/>
+                </key>
+                <key id="8" time="700">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="7" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="4" z_index="4"/>
+                </key>
+                <key id="9" time="800">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="8" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="4" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="handsomestatuebase">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-297.741773" y="764.995641" angle="0" scale_x="1.684268" scale_y="1.684268"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="handsomestatuecab">
+                <key id="0" spin="-1">
+                    <object folder="0" file="4" x="-305.238095" y="770.34632" angle="0" scale_x="1.725521" scale_y="1.725521"/>
+                </key>
+                <key id="1" time="99" spin="-1">
+                    <object folder="0" file="4" x="-274.25218" y="729.50125" angle="341.560361" scale_x="1.725521" scale_y="1.725521"/>
+                </key>
+                <key id="2" time="200" spin="-1">
+                    <object folder="0" file="4" x="-65.801476" y="567.529419" angle="297.795523" scale_x="1.725521" scale_y="1.725521"/>
+                </key>
+                <key id="3" time="300">
+                    <object folder="0" file="4" x="157.296855" y="344.616617" angle="259.662374" scale_x="1.725521" scale_y="1.725521"/>
+                </key>
+                <key id="4" time="400">
+                    <object folder="0" file="4" x="36.888691" y="352.779883" angle="281.471785" scale_x="1.725521" scale_y="1.725521"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="handsomestatueder">
+                <key id="0">
+                    <object folder="0" file="5" x="-297.636667" y="767.963714" angle="0" scale_x="1.694321" scale_y="1.694321"/>
+                </key>
+                <key id="1" time="100">
+                    <object folder="0" file="5" x="-415.585385" y="533.34833" angle="32.696391" scale_x="1.694321" scale_y="1.694321"/>
+                </key>
+                <key id="2" time="200">
+                    <object folder="0" file="5" x="-392.508462" y="24.373971" angle="76.482413" scale_x="1.694321" scale_y="1.694321"/>
+                </key>
+                <key id="3" time="300" spin="-1">
+                    <object folder="0" file="5" x="-360.45718" y="-88.446542" angle="94.77436" scale_x="1.694321" scale_y="1.694321"/>
+                </key>
+                <key id="4" time="400" spin="-1">
+                    <object folder="0" file="5" x="-357.893078" y="-80.754234" angle="87.644357" scale_x="1.694321" scale_y="1.694321"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="handsomestatueizq">
+                <key id="0" spin="-1">
+                    <object folder="0" file="6" x="-298.348631" y="768.561092" angle="0" scale_x="1.693217" scale_y="1.693217"/>
+                </key>
+                <key id="1" time="100" spin="-1">
+                    <object folder="0" file="6" x="-106.920059" y="811.418235" angle="336.006309" scale_x="1.693217" scale_y="1.693217"/>
+                </key>
+                <key id="2" time="200" spin="-1">
+                    <object folder="0" file="6" x="165.493734" y="599.349269" angle="308.851628" scale_x="1.693217" scale_y="1.693217"/>
+                </key>
+                <key id="3" time="300">
+                    <object folder="0" file="6" x="279.779448" y="578.941106" angle="297.860527" scale_x="1.693217" scale_y="1.693217"/>
+                </key>
+                <key id="4" time="400">
+                    <object folder="0" file="6" x="102.228428" y="548.328861" angle="315.658766" scale_x="1.693217" scale_y="1.693217"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="handsomestatueabd">
+                <key id="0">
+                    <object folder="0" file="7" x="-303.778841" y="775.493886" angle="0" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="1" time="100">
+                    <object folder="0" file="7" x="-421.170145" y="524.769249" angle="26.860919" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="2" time="200" spin="0">
+                    <object folder="0" file="7" x="-448.706377" y="166.798234" angle="40.951623" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="3" time="300">
+                    <object folder="0" file="7" x="-482.039711" y="104.479393" angle="40.951623" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="4" time="400">
+                    <object folder="0" file="7" x="-576.242609" y="56.653307" angle="55.318694" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="5" time="500">
+                    <object folder="0" file="7" x="-627.93343" y="-91.17278" angle="75.340308" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="6" time="600" spin="0">
+                    <object folder="0" file="7" x="-687.008655" y="-202.145865" angle="84.557937" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="7" time="700" spin="0">
+                    <object folder="0" file="7" x="-703.754039" y="-182.059815" angle="84.557937" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+                <key id="8" time="800" spin="-1">
+                    <object folder="0" file="7" x="-722.504039" y="-202.372315" angle="84.557937" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="handsomebroked" length="1000" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="4" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="1" key="0" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="handsomestatuebase">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-297.741773" y="764.995641" angle="0" scale_x="1.684268" scale_y="1.684268"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="handsomestatuecab">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="36.888691" y="352.779883" angle="281.471785" scale_x="1.725521" scale_y="1.725521"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="handsomestatueder">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="-357.893078" y="-80.754234" angle="87.644357" scale_x="1.694321" scale_y="1.694321"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="handsomestatueizq">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="102.228428" y="548.328861" angle="315.658766" scale_x="1.693217" scale_y="1.693217"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="handsomestatueabd">
+                <key id="0" spin="0">
+                    <object folder="0" file="7" x="-722.504039" y="-202.372315" angle="84.557937" scale_x="1.730446" scale_y="1.730446"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="3" name="handsomefire" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="1" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="2" key="0" z_index="3"/>
+                </key>
+                <key id="1" time="600">
+                    <object_ref id="0" timeline="3" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="1" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="2" key="1" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Fire3">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="36.176554" y="822.691335" angle="0" scale_x="0.107777" scale_y="0.107777"/>
+                </key>
+                <key id="1" time="600" spin="0">
+                    <object folder="0" file="0" x="39.793627" y="822.87492" angle="0" scale_x="0.107777" scale_y="0.107777"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Fire3_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="24.53853" y="287.66809" angle="0" scale_x="0.068875" scale_y="0.068875"/>
+                </key>
+                <key id="1" time="600" spin="0">
+                    <object folder="0" file="0" x="27.629038" y="287.888841" angle="0" scale_x="0.068875" scale_y="0.068875"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="Fire3_001">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="8.852076" y="228.871992" angle="0" scale_x="0.051378" scale_y="0.051378"/>
+                </key>
+                <key id="1" time="600" spin="0">
+                    <object folder="0" file="0" x="4.878566" y="229.092743" angle="0" scale_x="0.051378" scale_y="0.051378"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="handsomestatuechiq">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-298.580453" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="4" name="place" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="handsomestatuechiq">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-298.580453" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="5" name="hit" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="100">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="200">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="300">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="handsomestatuechiq">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-298.580453" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+                <key id="1" time="100" spin="0">
+                    <object folder="0" file="2" x="-287.312847" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+                <key id="2" time="200" spin="0">
+                    <object folder="0" file="2" x="-313.916916" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+                <key id="3" time="300" spin="0">
+                    <object folder="0" file="2" x="-303.304206" y="767.524752" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="6" name="attune_on" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="handsomestatuechiq">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-298.580453" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="7" name="attune_off" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="handsomestatuechiq">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-298.580453" y="768.974027" angle="0" scale_x="1.69113" scale_y="1.69113"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
