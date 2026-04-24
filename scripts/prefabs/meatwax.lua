@@ -8,10 +8,10 @@ local Assets = {
 }
 
 local function OnHaunt(inst, haunter)
-    -- Código simplificado de la función OnHaunt del plushieheart
+
     if haunter and haunter:HasTag("playerghost") and haunter.prefab == "waxbert" then
         haunter:PushEvent("respawnfromghost", { source = inst })
-        inst:Remove()  -- Esta línea eliminará el objeto "meatwax" después de que el fantasma reviva
+        inst:Remove() 
     end
     return true
 end
@@ -40,7 +40,7 @@ local function StartEffects(inst)
     if not inst.components.inventoryitem:IsHeld() then
         inst.Light:Enable(true)
         StartHeartbeat(inst)
-        inst.AnimState:PlayAnimation("animlatido", true)  -- Reproduce la animación animlatido
+        inst.AnimState:PlayAnimation("animlatido", true) 
     end
 end
 
@@ -108,17 +108,17 @@ local function MainFunction()
 
     MakeHauntableLaunch(inst)
 
-    -- Agregar la función OnHaunt al componente hauntable
+
     inst.components.hauntable:SetOnHauntFn(OnHaunt)
 
-    -- Configurar la luz
+
     inst.Light:SetRadius(0.2)
     inst.Light:SetFalloff(0.5)
     inst.Light:SetIntensity(.5)
     inst.Light:SetColour(255/255, 50/255, 50/255)
     inst.Light:Enable(false)
 
-    -- Agregar los eventos OnLoad y OnEntityWake
+
     inst.OnLoad = OnLoad
     inst.OnEntityWake = OnEntityWake
 
