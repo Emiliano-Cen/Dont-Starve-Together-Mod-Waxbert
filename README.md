@@ -68,4 +68,4 @@ Cómo usar el mod
 Autor
 
 Emiliano Cendali  
-Desarrollador de mods y estudiante de TI
+Estudiante en Analista en Tecnologías de la Información
